@@ -115,7 +115,7 @@ public class AppFolhaPagamento {
         Locale.setDefault(Locale.US); // Para formatar ponto decimal como esperado
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== App Folha de Pagamento (simulação) ===");
+        System.out.println("=== App Folha de Pagamento ===");
         System.out.print("Nome: ");
         String nome = sc.nextLine();
 
@@ -174,7 +174,7 @@ public class AppFolhaPagamento {
 
         c.exibirResumo();
 
-        System.out.printf("Detalhe (chamadas polimórficas): INSS=R$ %.2f, IRPF=R$ %.2f%n",
+        System.out.printf("Detalhe: INSS=R$ %.2f, IRPF=R$ %.2f%n",
                 c.calcularINSS(), c.calcularIRPF());
 
         sc.close();
